@@ -80,7 +80,15 @@ router.post('/signup', (req, res) => {
 })
 
 router.put('/update', (req,res) => {
+	console.log("/put/auth/update");
 	console.log(req.body);
+	const { id, food, movie } = req.body;
+	User.findOneAndUpdate({_id: id}, {
+		avoidFood: food,
+		avoidMovie: movie
+	})
+	.then(dbUser => res.json(dbUser))
+  .catch(err => res.status(422).json(err));
 })
 
 module.exports = router

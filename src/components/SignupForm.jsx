@@ -83,35 +83,35 @@ class SignupForm extends Component {
 					name="firstname"
 					value={this.state.firstname}
 					onChange={this.handleChange}
-				/>
+				/><br />
 				<label htmlFor="Last Name">Last Name: </label>
 				<input
 					type="text"
 					name="lastname"
 					value={this.state.lastname}
 					onChange={this.handleChange}
-				/>
-				<label htmlFor="password">Password: </label>
-				<input
-					type="password"
-					name="password"
-					value={this.state.password}
-					onChange={this.handleChange}
-				/>
-				<label htmlFor="confirmPassword">Confirm Password: </label>
-				<input
-					type="password"
-					name="confirmPassword"
-					value={this.state.confirmPassword}
-					onChange={this.handleChange}
-				/>
+				/><br />
 				<label htmlFor="Email">Email: </label>
 				<input
 					type="text"
 					name="username"
 					value={this.state.username}
 					onChange={this.handleChange}
-				/>
+				/><br />
+				<label htmlFor="password">Password: </label>
+				<input
+					type="password"
+					name="password"
+					value={this.state.password}
+					onChange={this.handleChange}
+				/><br />
+				<label htmlFor="confirmPassword">Confirm Password: </label>
+				<input
+					type="password"
+					name="confirmPassword"
+					value={this.state.confirmPassword}
+					onChange={this.handleChange}
+				/><br />
 				<label htmlFor="Zipcode">Zipcode: </label>
 				<input
 					type="text"
