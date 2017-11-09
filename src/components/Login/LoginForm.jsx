@@ -39,7 +39,7 @@ class LoginForm extends Component {
 				<div className="LoginForm">
 					<h1>Login form</h1>
 					<form>
-						<label htmlFor="username">Username: </label>
+						<label htmlFor="email">Email: </label>
 						<input
 							type="text"
 							name="username"
@@ -55,10 +55,6 @@ class LoginForm extends Component {
 						/>
 						<button onClick={this.handleSubmit}>Login</button>
 					</form>
-					<a href="/auth/google">
-						{/* <GoogleButton /> */}
-						<img src={googleButton} alt="sign into Google Button" />
-					</a>
 				</div>
 			)
 		}
